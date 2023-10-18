@@ -5,85 +5,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Kumar Tiwari - Portfolio</title>
+    <title>ADITYA KUMAR TIWARI</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://kit.fontawesome.com/8b4ead44dd.js" crossorigin="anonymous"></script>
 </head>
-<header>
 
-    <body>
-        <nav>
-            <div class="left"><em>Aditya's Portfolio</em></div>
-            <div class="right">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/blog.html">Blogs</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/A-logos_transparent.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, My name is <span class="namecolor">Aditya</span>,
+                    <div>Am a passionate,enthusiastic <br> learner and a</div>
+                    <span id="element"></span>
+                </h1>
             </div>
-        </nav>
-</header>
-<main>
-    <section class="firstSection">
-        <div class="leftsection">
-            Hello, My name is <span class="namecolor">Aditya</span>
-            <div>Am a passionate,enthusiastic learner and a</div>
-            <span id="element"></span>
         </div>
-        <div class="rightsection">
-            <img src="bg.png" alt="my image">
-        </div>
-    </section>
-    <hr>
-    <section class="secondSection">
-        <span class="text-grey">What i have learnt so far?</span>
-        <h1 class="skills-heading">My Skills</h1>
-        <div class="skill">
-            <li><h3>HTML</h3>
-                <span class="bar"><span class="html per-bar" per="90%"></span></span>
-            </li>
-            <li><h3>CSS</h3>
-                <span class="bar"><span class="css per-bar" per="70%"></span></span>
-            </li>
-            <li><h3>JAVASCRIPT</h3>
-                <span class="bar"><span class="javascript per-bar" per="60%"></span></span>
-            </li>
-            <li><h3>JAVA PROGRAMMING</h3>
-                <span class="bar"><span class="java per-bar" per="80%"></span></span>
-            </li>
-            <li><h3>C++ PROGRAMMING</h3>
-                <span class="bar"><span class="c per-bar" per="20%"></span></span>
-            </li>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="footer-content">
-        <h3><em>Aditya Kumar Tiwari</em></h3>
-        <p>Thank You for visiting </p>
-        <p>Email:- adiii77840@gmail.com </p>
-        <ul class="socials">
-            <li><a href="https://twitter.com/Adii_7784"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/adii_7784/"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/ironspec07"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/aditya-kumar-tiwari-605a40251/"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-        <p class="bottom">copyright © 2023 | All rights reserved</p>
     </div>
-</footer>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<!-- Setup and start animation! -->
-<script>
-    var typed = new Typed('#element', {
-        strings: ['Web Developer', 'App Developer', 'Java Coder', 'C++ Programmer.'],
-        typeSpeed: 50,
-    });
-</script>
+
+    <!-- ---------------ABOUT------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <p class="sub-title">About Me</p>
+                    <p>Hello and welcome to my personal portfolio website! My name is Aditya, and I am a first-year
+                        B.Tech student currently pursuing my degree in computer science engineering from vellore
+                        institute of technology,bhopal.
+                        <br>
+                        <br>
+                        I have always been passionate about programming, and I am currently honing my skills in Java
+                        programming, full-stack development, and Android app development. As a Java programmer, I am
+                        proficient in writing well-structured and efficient code that meets the highest industry
+                        standards. I am also experienced in developing full-stack applications, which involve working
+                        with both front-end and back-end technologies to create robust and scalable web applications.
+                        <br>
+                        <br>
+                        In addition to my expertise in Java and full-stack development, I have also been actively
+                        developing Android applications. I have a strong understanding of the Android development
+                        environment, and I am well-versed in developing applications that are optimized for the Android
+                        platform.
+                        <br>
+                        <br>
+                        During my time in college, I have also been involved in various extracurricular activities, such
+                        as Cricket and Hackathons, which have allowed me to develop my leadership and communication
+                        skills. I am always eager to learn new things and take on new challenges, and I am excited to
+                        see where my career in technology will take me.
+                        <br>
+                        <br>
+                        Thank you for taking the time to read my profile, and please feel free to connect with me if you
+                        have any questions or would like to discuss potential opportunities.
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Programmer</span><br>Problem solving using java.</li>
+                            <li><span>Web Developer</span><br>Web app devlopment.</li>
+                            <li><span>App Developer</span><br>Building android apps.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>student</span><br>Eager to gain some experience</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>B.Tech from VIT</li>
+                            <li><span>2020-21</span><br>Intermediate from ST.Thomas School,Kanpur</li>
+                            <li><span>2018-19</span><br>High school from ST.Thomas School,Kanpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------SERVICES------------ -->
+    <div id="services">
+        <div class="container">
+            <p class="sub-title title-margin">My Services</p>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Devlopment</h2>
+                    <p>Hi there! I'm a full stack developer with expertise in both front-end and back-end development. Let's build something amazing together!</p>
+                    <a href="#">Laern more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Devlopment</h2>
+                    <p>Hello! I'm an experienced Android app developer with a passion for creating innovative and user-friendly mobile applications. Let's build the next big thing in mobile together!</p>
+                    <a href="#">Laern more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Hi! I'm a skilled problem solver with expertise in Java programming. Let me help you find efficient and effective solutions for your next project.</p>
+                    <a href="#">Laern more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------PROJECTS------------ -->
+    <div id="projects">
+        <div class="comtainer">
+            <p class="sub-title title-margin">My Projects</p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Check out my calculator app built with HTML, CSS, and JavaScript!</p>
+                        <a href="https://bucolic-souffle-a0a7cb.netlify.app"><i class="fa-solid fa-calculator"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Car Animation</h3>
+                        <p>Take a look at my cool car animation built with HTML, CSS, and JavaScript!</p>
+                        <a href="https://radiant-bunny-fc56c1.netlify.app"><i class="fa-solid fa-car"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Cheetsheet</h3>
+                        <p>Check out my handy cheatsheet built with HTML, CSS, and JavaScript!</p>
+                        <a href="https://deft-klepon-0f504f.netlify.app"><i class="fa-solid fa-sheet-plastic"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.png">
+                    <div class="layer">
+                        <h3>Color Flipper</h3>
+                        <p>Take a look at my fun color flipper, built with HTML, CSS, and JavaScript with the help of FreeCodeCamp!</p>
+                        <a href="https://genuine-concha-758875.netlify.app"><i class="fa-sharp fa-solid fa-palette"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------CONTACTS------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title title-margin title-contact">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i> ironspec07@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/adii_7784/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Adii_7784"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/aditya-kumar-tiwari-605a40251/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ironspec07"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/MY-CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Aditya Kumar Tiwari.</p>
+        </div>
+    </div>
+
+    <!-- ---------------SCRIPT------------ -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'App Developer', 'Java Programmer.'],
+            typeSpeed: 50,
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbygKvZX_7gAoDooMtbvxhtjTzpdl2G__tdZk-yPESQUAKKUPK012UeKtUobtqMWnTAOYw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 </body>
+
+</html>
