@@ -5,6 +5,10 @@
       "destination": "https://winter-arc-app-seven.vercel.app/"
     },
     {
+      "source": "/winterarc/",
+      "destination": "https://winter-arc-app-seven.vercel.app/"
+    },
+    {
       "source": "/winterarc/:path*",
       "destination": "https://winter-arc-app-seven.vercel.app/:path*"
     }
