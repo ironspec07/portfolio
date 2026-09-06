@@ -6,7 +6,7 @@
     },
     {
       "source": "/winterarc/:path*",
-      "destination": "https://winter-arc-app-seven.vercel.app/"
+      "destination": "https://winter-arc-app-seven.vercel.app/:path*"
     }
   ]
 }
